@@ -2,9 +2,9 @@
 
 require_once('config/status_codes.php');
 
-$random_numbers = array_rand($status_codes, 4);
+$random_indexs = array_rand($status_codes, 4);
 
-foreach ($random_numbers as $index) {
+foreach ($random_indexs as $index) {
 $options[] = $status_codes[$index];
 }
 
@@ -43,11 +43,11 @@ $qestion = $options[mt_rand(0,3)];
         <form class="quiz-form" action="result.php" method="post">
           <input type="hidden" name="answer_code" value="<?php echo $qestion['code'] ?>">
           <div class="quiz-form__item">
-            <?php foreach ($options as $option): ?>
+            <?php foreach ($options as $option) : ?>
             <div class="quiz-form__group">
               <input class="quiz-form__radio" id="<?php echo $option['code'] ?>" type="radio" name="option" value="<?php echo $option['code'] ?>">
-              <label class="quiz-form__label" for="<?php echo $option['code']?>">
-              <?php echo $option['code']?>
+              <label class="quiz-form__label" for="<?php echo $option['code'] ?>">
+              <?php echo $option['code'] ?>
               </label>  
             </div>
             <?php endforeach; ?>
@@ -60,8 +60,6 @@ $qestion = $options[mt_rand(0,3)];
         </form>
     </div>    
   </main>
-
-    </div>
-</main>
 </body>
+
 </html>
