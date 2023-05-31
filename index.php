@@ -8,7 +8,7 @@ foreach ($random_indexes as $index) {
 $options[] = $status_codes[$index];
 }
 
-$qestion = $options[mt_rand(0,3)];
+$question = $options[mt_rand(0,3)];
 
 ?>
 

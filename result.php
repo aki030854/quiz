@@ -2,7 +2,7 @@
 
 require_once('config/status_codes.php');
 
-$answer_code = htmlspecialchars($_POST['anser_code'], ENT_QUOTES);
+$answer_code = htmlspecialchars($_POST['anwser_code'], ENT_QUOTES);
 $option = htmlspecialchars($_POST['option'], ENT_QUOTES);
 
 if(!$option) {
@@ -52,7 +52,8 @@ $result = $option === $code;
       <table class="answer-table__inner">
         <tr class="answer-table__row">
           <th class="answer-table__header">ステータスコード</th>
-          <td class="answer-table__text"><?php echo $code ?>
+          <td class="answer-table__text">
+            <?php echo $code ?>
           </td>
         </tr>
         <tr class="answer-table__row">

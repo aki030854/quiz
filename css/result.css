@@ -39,5 +39,5 @@
 
 .answer-table__row:last-child .answer-table__header,
 .answer-table__row:last-child .answer-table__text {
-    border-bottom-width: 0 ;
+    border-bottom-width: 0;
 }
