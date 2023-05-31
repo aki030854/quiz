@@ -37,11 +37,6 @@ $status_codes = [
         'description' => '閲覧権限が無いファイルやフォルダである'
     ],
     [
-        'code' => '403',
-        'meaning' => 'Forbidden',
-        'description' => '閲覧権限が無いファイルやフォルダである'
-    ],
-    [
         'code' => '404',
         'meaning' => 'Not found',
         'description' => 'Webページが見つからない'

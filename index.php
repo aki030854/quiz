@@ -2,9 +2,9 @@
 
 require_once('config/status_codes.php');
 
-$random_indexs = array_rand($status_codes, 4);
+$random_indexes = array_rand($status_codes, 4);
 
-foreach ($random_indexs as $index) {
+foreach ($random_indexes as $index) {
 $options[] = $status_codes[$index];
 }
 
